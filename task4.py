@@ -7,6 +7,7 @@ import pandas as pd
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
 #从本地读取数据
 xy = pd.read_csv('./diabetes.csv').values
 x = Variable(torch.from_numpy(xy[:,0:-1]))
